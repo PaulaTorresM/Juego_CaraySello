@@ -4,7 +4,7 @@ let profes = document.getElementById("boton")
 profes.addEventListener('click', () => {
 
     let seguir, apuesta, plata
-    let opcion1 = Math.floor(Math.random()*3);
+    let opcion1 = Math.floor(Math.random()*2)+1;
 
     let juego = (document.getElementById("juego").value);
 
@@ -15,6 +15,7 @@ profes.addEventListener('click', () => {
     do {
         apuesta = prompt("¿cuanto desea apostar?");
         alert("La maquina esta girando la moneda, presione aceptar para saber su resultado");
+        let opcion1 = Math.floor(Math.random()*2)+1;
         if (juego == "num1" && opcion1 == 1) {
             plata = 5000 + apuesta * 2;
             alert("Usted ha ganado la opción de la maquina es " + opcion1);
